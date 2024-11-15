@@ -9,7 +9,7 @@ function App() {
     const r = document.querySelector(':root');
     if (e.target.alt === "sun") {
       r.style.setProperty("--bg-color", "hsl(236, 33%, 92%)");
-      r.style.setProperty("--bg-img", "url(/src/assets/bg-desktop-light.jpg) no-repeat top left");
+      r.style.setProperty("--bg-img", "url(src/assets/bg-desktop-light.jpg) no-repeat top left");
       r.style.setProperty("--todo-bg", "hsl(0, 0%, 98%)");
       r.style.setProperty("--text-color", "hsl(235, 19%, 35%)");
       r.style.setProperty("--hover", "hsl(235, 19%, 35%)");
@@ -21,7 +21,7 @@ function App() {
       e.target.alt = "moon";
     } else {
       r.style.setProperty("--bg-color", "hsl(235, 21%, 11%)");
-      r.style.setProperty("--bg-img", "url(/src/assets/bg-desktop-dark.jpg) no-repeat top left");
+      r.style.setProperty("--bg-img", "url(src/assets/bg-desktop-dark.jpg) no-repeat top left");
       r.style.setProperty("--todo-bg", "hsl(235, 24%, 19%)");
       r.style.setProperty("--text-color", "hsl(234, 39%, 85%)");
       r.style.setProperty("--hover", "hsl(236, 33%, 92%)");
