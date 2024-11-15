@@ -1,0 +1,52 @@
+.item {
+    align-items: center;
+    background-color: var(--todo-bg);
+    border-bottom: 1px solid var(--item-border);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 20px;
+}
+
+.item:first-child {
+    border-radius: 4px 4px 0 0;
+}
+
+.item .checkButton {
+    align-items: center;
+    display: flex;
+    gap: 22px;
+    justify-content: flex-start;
+}
+
+.item p {
+    cursor: grab;
+}
+
+.complete {
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+
+.item input {
+    -webkit-appearance: none;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid var(--border);
+    cursor: pointer;
+    height: 27px;
+    width: 27px;
+}
+
+.item input:hover {
+    border-color: hsl(220, 98%, 61%);
+}
+
+.item input:checked {
+    background: url("./../../assets/icon-check.svg") no-repeat center / 50% 50%, linear-gradient(to bottom left, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    border: none;
+}
+
+.item img {
+    cursor: pointer;
+}
