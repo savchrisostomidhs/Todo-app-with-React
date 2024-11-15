@@ -1,6 +1,8 @@
 import ToDo from "./Components/ToDo"
 import sun from "./assets/icon-sun.svg"
 import moon from "./assets/icon-moon.svg"
+import bgdark from "./assets/bg-desktop-dark.jpg"
+import bglight from "./assets/bg-desktop-light.jpg"
 import "./App.css"
 
 function App() {
@@ -16,7 +18,7 @@ function App() {
       r.style.setProperty("--border", "hsl(233, 11%, 84%)");
       r.style.setProperty("--item-border", "hsl(233, 11%, 84%)");
       r.style.setProperty("--shadow", "hsl(233, 11%, 84%)");
-      document.body.style.background = "url(src/assets/bg-desktop-light.jpg) no-repeat top left, var(--bg-color)";
+      document.body.style.background = `url(${bglight}) no-repeat top left, var(--bg-color)`;
       e.target.src = moon;
       e.target.alt = "moon";
     } else {
@@ -28,7 +30,7 @@ function App() {
       r.style.setProperty("--border", "hsl(237, 14%, 26%)");
       r.style.setProperty("--item-border", "hsl(233, 14%, 35%)");
       r.style.setProperty("--shadow", "hsla(0, 0%, 0%, 0.4)");
-      document.body.style.background = "url(src/assets/bg-desktop-dark.jpg) no-repeat top left, var(--bg-color)";
+      document.body.style.background = `url(${bgdark}) no-repeat top left, var(--bg-color)`;
       e.target.src = sun;
       e.target.alt = "sun";
     }
